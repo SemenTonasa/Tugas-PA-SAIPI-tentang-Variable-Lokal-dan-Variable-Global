@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int ContohFunction1 () 
+{
+	int m = 10 ;
+	return m;
+	//variable dihancurkan/dihapus dari alamat memory
+}
+int ContohFunction2 () 
+{
+	int n = 20 ;
+	return n;
+	//variable dihancurkan/dihapus dari alamat memory	
+}
+int main ()
+{
+	cout << "Nama: Muhammad Yusfi Khatami" << endl;
+	cout << "NIM: ETE10190110" << endl;
+	cout << "Mata Kuliah: Bahasa Pemrograman" << endl;
+	cout << endl;
+	cout << "Ini tampilan dari Variable Lokal:" <<endl;
+	int m = 5 ;
+	cout << "Ini variable lokal dari fungsi utama adalah " << m << endl;
+	cout << "Ini variable lokal dari fungsi Contoh Function m adalah " << ContohFunction1 ();
+	cout << endl;
+	int n = 15 ;
+	cout << "Ini variable lokal dari fungsi kedua adalah " << n << endl;
+	cout << "Ini variable lokal dari fungsi Contoh Function n adalah " << ContohFunction2 ();
+	cout << endl;
+}
